@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeImgw">120dp</dimen>
+    <dimen name="sizeImgh">120dp</dimen>
+    <dimen name="sizemargen">40dp</dimen>
+    <dimen name="sizew">120dp</dimen>
+    <dimen name="sizeh">20dp</dimen>
+    <dimen name="SizeAnchoET">300dp</dimen>
+    <dimen name="SizeAltoET">40dp</dimen>
+    <dimen name="SizeAnchoImagenLand">100dp</dimen>
+    <dimen name="SizeAltoImagenLand">60dp</dimen>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pelicula"
+        android:layout_width="@dimen/sizeImgw"
+        android:layout_height="@dimen/sizeImgh"
+        android:layout_margin="@dimen/sizemargen"
+        android:layout_gravity="center"
+        android:src="@mipmap/pelicula"
+        />
+    
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="@dimen/sizew"
+        android:layout_height="@dimen/sizeh"
+        android:text="Cinema Popayán"
+        android:layout_gravity="center"
+        />    
+    
+    <EditText
+        android:id="@+id/Usuario"
+        android:layout_width="@dimen/SizeAnchoET"
+        android:layout_height="@dimen/SizeAltoET"
+        android:hint="Usuario"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sizeh"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/Contrasenia"
+        android:layout_width="@dimen/SizeAnchoET"
+        android:layout_height="@dimen/SizeAltoET"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Contraseña"
+        android:layout_marginTop="@dimen/sizeh"
+        />
+
+    <Button
+        android:id="@+id/BtnIngreso"
+        android:layout_width="@dimen/SizeAnchoET"
+        android:layout_height="@dimen/SizeAltoET"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sizeh"
+        android:background="@color/Azul"
+        android:gravity="center"
+        android:text="Ingresa"
+        android:textColor="@color/Blanco"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/BtnRegistrate"
+        android:layout_width="@dimen/SizeAnchoET"
+        android:layout_height="@dimen/SizeAltoET"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sizeh"
+        android:background="@color/Azul"
+        android:gravity="center"
+        android:text="Registrate"
+        android:textColor="@color/Blanco"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
