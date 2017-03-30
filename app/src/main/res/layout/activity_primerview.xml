@@ -19,20 +19,20 @@
         android:layout_height="@dimen/sizeh"
         android:text="Cinema Popayán"
         android:layout_gravity="center"
-        />    
-    
+        />
+
     <EditText
-        android:id="@+id/Usuario"
+        android:id="@+id/usuario"
         android:layout_width="@dimen/SizeAnchoET"
         android:layout_height="@dimen/SizeAltoET"
-        android:hint="Usuario"
-        android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/sizeh"
-        android:inputType="text"
-        />
+        android:gravity="center"
+        android:hint="Usuario"
+        android:inputType="text" />
+
     <EditText
-        android:id="@+id/Contrasenia"
+        android:id="@+id/contrasenia"
         android:layout_width="@dimen/SizeAnchoET"
         android:layout_height="@dimen/SizeAltoET"
         android:inputType="textPassword"
@@ -43,7 +43,7 @@
         />
 
     <Button
-        android:id="@+id/BtnIngreso"
+        android:id="@+id/btnIngreso"
         android:layout_width="@dimen/SizeAnchoET"
         android:layout_height="@dimen/SizeAltoET"
         android:layout_gravity="center"
@@ -57,7 +57,7 @@
         />
 
     <Button
-        android:id="@+id/BtnRegistrate"
+        android:id="@+id/btnRegistrarse"
         android:layout_width="@dimen/SizeAnchoET"
         android:layout_height="@dimen/SizeAltoET"
         android:layout_gravity="center"

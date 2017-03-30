@@ -9,5 +9,12 @@
     <dimen name="SizeAltoET">40dp</dimen>
     <dimen name="SizeAnchoImagenLand">100dp</dimen>
     <dimen name="SizeAltoImagenLand">60dp</dimen>
+    <dimen name="AnchoTexto">200dp</dimen>
+    <dimen name="AltoTexto">20dp</dimen>
+    <dimen name="anchoET">250dp</dimen>
+    <dimen name="altoET">40dp</dimen>
+    <dimen name="margen">10dp</dimen>
+    <dimen name="small">12dp</dimen>
+    <dimen name="SizeAnchoETLand">250dp</dimen>
 
 </resources>
