@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PeliculasApp</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contrasenia</string>
+    <string name="login">Ingresar</string>
+    <string name="register">Registrate</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="age">Edad</string>
+    <string name="PopayanCinema">Cinema Popayán</string>
+    <string name="Welcome">Bienvenido al Registro</string>
+    <string name="Login">Inicia Sesión con:</string>
+</resources>

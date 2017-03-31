@@ -5,11 +5,19 @@
     android:layout_margin="@dimen/small"
     >
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/txtv1"
         android:layout_width="@dimen/AnchoTexto"
         android:layout_height="@dimen/AltoTexto"
-        android:text="Bienvenido al Registro"
+        android:text="@string/Welcome"
         android:gravity="center"
         />
 
@@ -17,7 +25,7 @@
         android:id="@+id/etNombre"
         android:layout_width="@dimen/anchoET"
         android:layout_height="@dimen/altoET"
-        android:hint="Nombre"
+        android:hint="@string/name"
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/margen"
@@ -31,7 +39,7 @@
         android:layout_height="@dimen/altoET"
         android:layout_gravity="center"
         android:gravity="center"
-        android:hint="Apellido"
+        android:hint="@string/lastname"
         android:layout_marginTop="@dimen/margen"
         android:layout_below="@id/etNombre"
         android:inputType="text"
@@ -42,7 +50,7 @@
         android:layout_height="@dimen/altoET"
         android:layout_gravity="center"
         android:gravity="center"
-        android:hint="Edad"
+        android:hint="@string/age"
         android:layout_marginTop="@dimen/margen"
         android:layout_below="@id/etApellido"
         android:inputType="text"
@@ -54,7 +62,7 @@
         android:layout_height="@dimen/altoET"
         android:layout_gravity="center"
         android:gravity="center"
-        android:hint="Usuario"
+        android:hint="@string/user"
         android:layout_marginTop="@dimen/margen"
         android:layout_toRightOf="@id/etNombre"
         android:layout_below="@id/txtv1"
@@ -67,7 +75,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="@dimen/margen"
-        android:hint="Contraseña"
+        android:hint="@string/pass"
         android:layout_below="@id/etUsuario"
         android:layout_toRightOf="@id/etNombre"
         android:inputType="textPassword"
@@ -76,7 +84,7 @@
         android:id="@+id/btnRegistrate"
         android:layout_width="@dimen/SizeAnchoETLand"
         android:layout_height="@dimen/SizeAltoET"
-        android:text="Registrarse"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:background="@color/Azul"
         android:textColor="@color/Blanco"
@@ -91,7 +99,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="@dimen/margen"
-        android:text="Inicia Sesión Con:"
+        android:text="@string/Login"
         android:layout_below="@id/etContrasenia"
         android:layout_toRightOf="@id/etEdad"
         android:layout_alignParentRight="true"
@@ -108,8 +116,7 @@
         android:layout_toRightOf="@id/btnRegistrate"
         android:layout_alignParentRight="true"
         />
-
-
-
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

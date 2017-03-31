@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">PeliculasAppMoviles</string>
+    <string name="app_name">MoviesApp</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="age">Age</string>
+    <string name="PopayanCinema">Popayan Cinema</string>
+    <string name="Welcome">Welcome to Register</string>
+    <string name="Login">Login</string>
 </resources>

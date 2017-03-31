@@ -20,6 +20,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_registro);
 
 
+        //region Recuperar Views
         edtNombre = (EditText) findViewById(R.id.etNombre);
         edtApellido = (EditText) findViewById(R.id.etApellido);
         edtEdad = (EditText) findViewById(R.id.etEdad);
@@ -27,16 +28,19 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         edtContrasenia = (EditText) findViewById(R.id.etContrasenia);
 
         butRegistrarse = (Button) findViewById(R.id.btnRegistrate);
-
         imgGoogleMas = (ImageView) findViewById(R.id.imvGoogleMas);
+        //endregion
 
+        //region Eventos
         butRegistrarse.setOnClickListener(this);
+        //endregion
     }
 
 
     @Override
     public void onClick(View v) {
 
+        //region Envia los campos llenos a Usuario y contraseña
         switch (v.getId()) {
             case R.id.btnRegistrate:
                 Intent intent = new Intent(this, MainActivity.class);
@@ -48,6 +52,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                 startActivity(intent);
                 break;
         }
+        //endregion
 
     }
 }

@@ -3,84 +3,92 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
+    android:baselineAligned="false"
+    android:layout_margin="@dimen/small"
+    >
 
-    android:baselineAligned="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/pelicula"
-        android:layout_width="@dimen/SizeAnchoImagenLand"
-        android:layout_height="@dimen/SizeAltoImagenLand"
-        android:layout_weight="1"
-        android:src="@mipmap/pelicula"
-        android:layout_gravity="center"
-        />
 
-    <LinearLayout
-        android:layout_width="435dp"
-        android:layout_height="247dp"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:id="@+id/texto"
-            android:layout_width="@dimen/sizew"
-            android:layout_height="@dimen/sizeh"
-            android:text="Cinema Popayán"
+        <ImageView
+            android:id="@+id/pelicula"
+            android:layout_width="@dimen/SizeAnchoImagenLand"
+            android:layout_height="@dimen/SizeAltoImagenLand"
+            android:layout_weight="1"
+            android:src="@mipmap/pelicula"
             android:layout_gravity="center"
             />
 
-        <EditText
-            android:id="@+id/Usuario"
-            android:layout_width="@dimen/SizeAnchoET"
-            android:layout_height="@dimen/SizeAltoET"
-            android:hint="Usuario"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/sizeh"
-            android:inputType="text"
-            />
-        <EditText
-            android:id="@+id/Contrasenia"
-            android:layout_width="@dimen/SizeAnchoET"
-            android:layout_height="@dimen/SizeAltoET"
-            android:inputType="textPassword"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="Contraseña"
-            android:layout_marginTop="@dimen/sizeh"
-            />
+        <LinearLayout
+            android:layout_width="435dp"
+            android:layout_height="247dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="@dimen/sizew"
+                android:layout_height="@dimen/sizeh"
+                android:text="@string/PopayanCinema"
+                android:layout_gravity="center"
+                />
 
-        <Button
-            android:id="@+id/BtnIngreso"
-            android:layout_width="@dimen/SizeAnchoET"
-            android:layout_height="@dimen/SizeAltoET"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/sizeh"
-            android:background="@color/Azul"
-            android:gravity="center"
-            android:text="Ingresa"
-            android:textColor="@color/Blanco"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            />
+            <EditText
+                android:id="@+id/Usuario"
+                android:layout_width="@dimen/SizeAnchoET"
+                android:layout_height="@dimen/SizeAltoET"
+                android:hint="@string/user"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/sizeh"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/Contrasenia"
+                android:layout_width="@dimen/SizeAnchoET"
+                android:layout_height="@dimen/SizeAltoET"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/pass"
+                android:layout_marginTop="@dimen/sizeh"
+                />
 
-        <Button
-            android:id="@+id/BtnRegistrate"
-            android:layout_width="@dimen/SizeAnchoET"
-            android:layout_height="@dimen/SizeAltoET"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@color/Azul"
-            android:gravity="center"
-            android:text="Registrate"
-            android:textColor="@color/Blanco"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            <Button
+                android:id="@+id/BtnIngreso"
+                android:layout_width="@dimen/SizeAnchoET"
+                android:layout_height="@dimen/SizeAltoET"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/sizeh"
+                android:background="@color/Azul"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/Blanco"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                />
 
+            <Button
+                android:id="@+id/BtnRegistrate"
+                android:layout_width="@dimen/SizeAnchoET"
+                android:layout_height="@dimen/SizeAltoET"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/Azul"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/Blanco"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                />
+            </LinearLayout>
+        </LinearLayout>
 
-
-
-
+    </ScrollView>
 
 </LinearLayout>
+
