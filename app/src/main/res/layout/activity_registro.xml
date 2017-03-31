@@ -58,7 +58,7 @@
         android:gravity="center"
         android:hint="@string/age"
         android:layout_marginTop="@dimen/margen"
-        android:inputType="text"
+        android:inputType="number"
         />
     <EditText
         android:id="@+id/etUsuario"

@@ -16,5 +16,7 @@
     <dimen name="margen">10dp</dimen>
     <dimen name="small">12dp</dimen>
     <dimen name="SizeAnchoETLand">250dp</dimen>
+    <dimen name="AnchoLinearIngreso">435dp</dimen>
+    <dimen name="AltoLinearIngreso">247dp</dimen>
 
 </resources>
