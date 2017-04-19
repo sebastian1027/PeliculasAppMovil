@@ -7,4 +7,7 @@
     <color name="Verde">#00ff88</color>
     <color name="Azul">#0000FF</color>
     <color name="Blanco">#FFFFFF</color>
+    <color name="Negro">#000000</color>
+    <color name="AzulClaro">#2411e2</color>
+    <color name="Rojo">#FF0000</color>
 </resources>
