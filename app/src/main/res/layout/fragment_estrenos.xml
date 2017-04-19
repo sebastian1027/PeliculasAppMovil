@@ -6,109 +6,116 @@
     android:padding="@dimen/small"
     >
 
-    <ScrollView
-        android:layout_width="300dp"
-        android:layout_height="145dp">
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
 
-        <RelativeLayout
-            android:id="@+id/rl1"
+        <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
-            android:layout_height="125dp">
-
-            <ImageView
-                android:id="@+id/peli1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_centerVertical="true"
-                android:src="@mipmap/logan" />
+            android:layout_height="wrap_content">
 
             <RelativeLayout
-                android:id="@+id/relat2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/peli1">
+                android:id="@+id/pelicula1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <ImageView
+                    android:id="@+id/peli1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@mipmap/logan" />
+
+                <RelativeLayout
+                    android:id="@+id/descripcion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/peli1">
 
 
-                <TextView
-                    android:id="@+id/txt1pel1"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_toRightOf="@id/peli1"
-                    android:text="@string/logan"
-                    android:textColor="@color/Rojo" />
+                    <TextView
+                        android:id="@+id/txt1pel1"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@id/peli1"
+                        android:text="@string/logan"
+                        android:textColor="@color/Rojo" />
 
-                <TextView
-                    android:id="@+id/txt2pel1"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt1pel1"
-                    android:layout_toRightOf="@id/peli1"
-                    android:text="@string/duration"
-                    android:textColor="@color/AzulClaro"
-                    android:layout_toLeftOf="@+id/txttipogeneropel1"
-                    android:layout_toStartOf="@+id/txttipogeneropel1" />
+                    <TextView
+                        android:id="@+id/txt2pel1"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt1pel1"
+                        android:layout_toLeftOf="@+id/txttipogeneropel1"
+                        android:layout_toRightOf="@id/peli1"
+                        android:layout_toStartOf="@+id/txttipogeneropel1"
+                        android:text="@string/duration"
+                        android:textColor="@color/AzulClaro" />
 
-                <TextView
-                    android:id="@+id/txttiempopel1"
-                    android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt1pel1"
-                    android:layout_toRightOf="@id/txt2pel1"
-                    android:text="120"
-                    android:textColor="@color/Negro" />
+                    <TextView
+                        android:id="@+id/txttiempopel1"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt1pel1"
+                        android:layout_toRightOf="@id/txt2pel1"
+                        android:text="120"
+                        android:textColor="@color/Negro" />
 
-                <TextView
-                    android:id="@+id/txtminpel1"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt1pel1"
-                    android:layout_toRightOf="@id/txttiempopel1"
-                    android:text="@string/Minutes"
-                    android:textColor="@color/Negro" />
+                    <TextView
+                        android:id="@+id/txtminpel1"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt1pel1"
+                        android:layout_toRightOf="@id/txttiempopel1"
+                        android:text="@string/Minutes"
+                        android:textColor="@color/Negro" />
 
-                <TextView
-                    android:id="@+id/txtGeneropel1"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt2pel1"
-                    android:layout_toRightOf="@id/peli1"
-                    android:text="@string/type"
-                    android:textColor="@color/AzulClaro" />
+                    <TextView
+                        android:id="@+id/txtGeneropel1"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt2pel1"
+                        android:layout_toRightOf="@id/peli1"
+                        android:text="@string/type"
+                        android:textColor="@color/AzulClaro" />
 
-                <TextView
-                    android:id="@+id/txttipogeneropel1"
-                    android:layout_width="50dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt2pel1"
-                    android:layout_toRightOf="@id/txtGeneropel1"
-                    android:text="@string/action"
-                    android:textColor="@color/Negro" />
+                    <TextView
+                        android:id="@+id/txttipogeneropel1"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt2pel1"
+                        android:layout_toRightOf="@id/txtGeneropel1"
+                        android:text="@string/action"
+                        android:textColor="@color/Negro" />
 
-                <TextView
-                    android:id="@+id/txttipogeneropel2"
-                    android:layout_width="50dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/txt2pel1"
-                    android:layout_toRightOf="@id/txttipogeneropel1"
-                    android:text="@string/fiction"
-                    android:textColor="@color/Negro" />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txttipogeneropel2"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/txt2pel1"
+                        android:layout_toRightOf="@id/txttipogeneropel1"
+                        android:text="@string/fiction"
+                        android:textColor="@color/Negro" />
 
-            <Button
-                android:id="@+id/recordar1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="17dp"
-                android:gravity="center"
-                android:text="@string/remember"
-                android:background="@color/Amarillo"
-                />
+                </RelativeLayout>
 
-        </RelativeLayout> <!-- Pelicula 1-->
+                <Button
+                    android:id="@+id/recordar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Amarillo"
+                    android:gravity="center"
+                    android:text="@string/remember"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
 
-    </ScrollView>
+            </RelativeLayout> <!-- Pelicula 1-->
 
+
+
+
+        </ScrollView>
+    </RelativeLayout>
 </FrameLayout>

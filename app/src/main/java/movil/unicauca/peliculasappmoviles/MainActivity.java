@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import movil.unicauca.peliculasappmoviles.Tabbed.TabbedActivity;
+
 import static movil.unicauca.peliculasappmoviles.R.id.etUsuario;
 import static movil.unicauca.peliculasappmoviles.R.id.usuario;
 
@@ -73,6 +75,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, Registro.class);
                 startActivity(intent);
                 break;
+            case R.id.btnIngreso:
+                Intent intent1 = new Intent(this, TabbedActivity.class);
+                startActivity(intent1);
+                break;
+
+
         }
         //endregion
 
