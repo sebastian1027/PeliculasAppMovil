@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeImgw">120dp</dimen>
+    <dimen name="sizeImgh">120dp</dimen>
+    <dimen name="sizemargen">40dp</dimen>
+    <dimen name="sizew">120dp</dimen>
+    <dimen name="sizeh">20dp</dimen>
+    <dimen name="SizeAnchoET">300dp</dimen>
+    <dimen name="SizeAltoET">40dp</dimen>
+    <dimen name="SizeAnchoImagenLand">100dp</dimen>
+    <dimen name="SizeAltoImagenLand">60dp</dimen>
+    <dimen name="AnchoTexto">200dp</dimen>
+    <dimen name="AltoTexto">20dp</dimen>
+    <dimen name="anchoET">250dp</dimen>
+    <dimen name="altoET">40dp</dimen>
+    <dimen name="margen">10dp</dimen>
+    <dimen name="small">12dp</dimen>
+    <dimen name="SizeAnchoETLand">250dp</dimen>
+    <dimen name="AnchoLinearIngreso">435dp</dimen>
+    <dimen name="AltoLinearIngreso">247dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

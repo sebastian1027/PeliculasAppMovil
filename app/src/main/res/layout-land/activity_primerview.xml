@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:layout_margin="@dimen/small"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/pelicula"
+                android:layout_width="@dimen/SizeAnchoImagenLand"
+                android:layout_height="@dimen/SizeAltoImagenLand"
+                android:layout_weight="1"
+                android:src="@drawable/pelicula"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/AnchoLinearIngreso"
+                android:layout_height="@dimen/AltoLinearIngreso"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="@dimen/sizew"
+                    android:layout_height="@dimen/sizeh"
+                    android:text="@string/PopayanCinema"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/usuario"
+                    android:layout_width="@dimen/SizeAnchoET"
+                    android:layout_height="@dimen/SizeAltoET"
+                    android:hint="@string/user"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/sizeh"
+                    android:inputType="text"
+                    />
+                <EditText
+                    android:id="@+id/contrasenia"
+                    android:layout_width="@dimen/SizeAnchoET"
+                    android:layout_height="@dimen/SizeAltoET"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/pass"
+                    android:layout_marginTop="@dimen/sizeh"
+                    />
+
+                <Button
+                    android:id="@+id/btnIngreso"
+                    android:layout_width="@dimen/SizeAnchoET"
+                    android:layout_height="@dimen/SizeAltoET"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/sizeh"
+                    android:background="@color/Azul"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/Blanco"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/btnRegistrarse"
+                    android:layout_width="@dimen/SizeAnchoET"
+                    android:layout_height="@dimen/SizeAltoET"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Azul"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textColor="@color/Blanco"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

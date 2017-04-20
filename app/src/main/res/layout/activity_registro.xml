@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="movil.unicauca.peliculasappmoviles.RegistroActivity"
+    android:layout_margin="@dimen/small"
+    android:orientation="vertical"
+    >
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/txtv1"
+                    android:layout_width="@dimen/AnchoTexto"
+                    android:layout_height="@dimen/AltoTexto"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/Welcome" />
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="@dimen/anchoET"
+                    android:layout_height="@dimen/altoET"
+                    android:hint="@string/name"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/AltoTexto"
+                    />
+
+                <EditText
+                    android:id="@+id/etApellido"
+                    android:layout_width="@dimen/anchoET"
+                    android:layout_height="@dimen/altoET"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/lastname"
+                    android:layout_marginTop="@dimen/margen"
+                    android:inputType="text"
+                    />
+                <EditText
+                    android:id="@+id/etEdad"
+                    android:layout_width="@dimen/anchoET"
+                    android:layout_height="@dimen/altoET"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/age"
+                    android:layout_marginTop="@dimen/margen"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/etUsuario"
+                    android:layout_width="@dimen/anchoET"
+                    android:layout_height="@dimen/altoET"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/user"
+                    android:layout_marginTop="@dimen/margen"
+                    android:inputType="text"
+                    />
+
+                <EditText
+                    android:id="@+id/etContrasenia"
+                    android:layout_width="@dimen/anchoET"
+                    android:layout_height="@dimen/altoET"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margen"
+                    android:gravity="center"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    />
+
+                <Button
+                    android:id="@+id/btnRegistrate"
+                    android:layout_width="@dimen/SizeAnchoET"
+                    android:layout_height="@dimen/SizeAltoET"
+                    android:layout_marginTop="@dimen/margen"
+                    android:background="@color/Azul"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Blanco"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/txtv2"
+                    android:layout_width="@dimen/AnchoTexto"
+                    android:layout_height="@dimen/AltoTexto"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margen"
+                    android:text="@string/Login"
+                    />
+                <ImageView
+                    android:id="@+id/imvGoogleMas"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/margen"
+                    android:src="@drawable/googlemas"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
