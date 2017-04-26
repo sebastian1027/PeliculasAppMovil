@@ -2,19 +2,93 @@ package movil.unicauca.peliculasappmoviles;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
 import movil.unicauca.peliculasappmoviles.Listas.ListaEntradaEstrenos;
+import movil.unicauca.peliculasappmoviles.Tabbed.TabbedActivity;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ListView lista;
+    private ImageView img1;
+    private EditText ETUser, ETPass;
+    private Button btnIngresar, btnRegistro;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_primerview);
+
+
+        //region Recuperar Views
+        img1 = (ImageView) findViewById(R.id.pelicula);
+        ETUser = (EditText) findViewById(R.id.usuario);
+        ETPass = (EditText) findViewById(R.id.contrasenia);
+        btnIngresar = (Button) findViewById(R.id.btnIngreso);
+        btnRegistro = (Button) findViewById(R.id.btnRegistrarse);
+        //endregion
+
+        //region Eventos
+        btnIngresar.setOnClickListener(this);
+        btnRegistro.setOnClickListener(this);
+        //endregion
+
+        //region Cargamos Eventos Previos
+        if (savedInstanceState != null){
+            ETUser.setText(savedInstanceState.getString("Usuario"));
+            ETPass.setText(savedInstanceState.getString("Contrasenia"));
+        }
+        //endregion
+
+        //region Permite que los campos Usuario y Contraseña se completen en el primer view
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null){
+            String cadena = (String) bundle.get("DATO");
+            ETUser.setText(cadena);
+
+            String cadena1 = (String) bundle.get("DATO1");
+            ETPass.setText(cadena1);
+        }
+        //endregion
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("Usuario", ETUser.getText().toString());
+        outState.putString("Contrasenia", ETPass.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onClick(View v) {
+        //region Al pulsar el Boton cambia de Activity
+        switch (v.getId()){
+            case R.id.btnRegistrarse:
+                Intent intent = new Intent(this, RegistroActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnIngreso:
+                Intent intent1 = new Intent(this, TabbedActivity.class);
+                startActivity(intent1);
+                break;
+        }
+        //endregion
+
+    }
+}
+//region no sirve
+    /*private ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,3 +157,5 @@ public class MainActivity extends Activity {
 
     }
 }
+*/
+//endregion
