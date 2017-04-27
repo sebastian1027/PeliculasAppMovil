@@ -130,10 +130,10 @@ public class TabbedActivity extends AppCompatActivity {
             // Return a PlaceholderFragment (defined as a static inner class below).
             //return PlaceholderFragment.newInstance(position + 1);
             switch (position) {
+                //case 0:
+                    //EstrenosFragment estrenosFragment = new EstrenosFragment();
+                    //return estrenosFragment;
                 case 0:
-                    EstrenosFragment estrenosFragment = new EstrenosFragment();
-                    return estrenosFragment;
-                case 1:
                     ProximosEstrenosFragment proximosEstrenosFragment = new ProximosEstrenosFragment();
                     return proximosEstrenosFragment;
             }
