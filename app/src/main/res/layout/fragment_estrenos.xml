@@ -1,102 +1,136 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="movil.unicauca.peliculasappmoviles.Tabbed.EstrenosFragment$PlaceholderFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
-        android:id="@+id/pelicula"
+    <data>
+
+        <variable
+            name="handler"
+            type="movil.unicauca.peliculasappmoviles.Tabbed.EstrenosFragment" />
+        <variable
+            name="estrenos"
+            type="movil.unicauca.peliculasappmoviles.Listas.ListaEntradaEstrenos"/>
+
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="123dp">
-
-        <ImageView
-            android:id="@+id/imageView_imagen"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@android:drawable/ic_menu_gallery"
-            />
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="movil.unicauca.peliculasappmoviles.Tabbed.EstrenosFragment$PlaceholderFragment">
 
         <RelativeLayout
-            android:id="@+id/descripcion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/imageView_imagen"
-            android:layout_above="@+id/Recordar"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true">
+            android:id="@+id/pelicula"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:onClick="@{(v)-> handler.onClick(v)}"
+            >
 
+            <ImageView
+                android:id="@+id/imageView_imagen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:imgUrl="@{estrenos.image}"
+                />
 
-            <TextView
-                android:id="@+id/textotitulopelicula"
-                android:layout_width="120dp"
-                android:layout_height="40dp"
+            <RelativeLayout
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imageView_imagen"
-                android:text="@string/tittlemovie"
-                android:textColor="@color/Rojo" />
+                android:layout_above="@+id/Recordar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true">
 
-            <TextView
-                android:id="@+id/textoduracion"
-                android:layout_width="70dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textotitulopelicula"
-                android:layout_toLeftOf="@+id/txttipogeneropel1"
-                android:layout_toRightOf="@id/imageView_imagen"
-                android:layout_toStartOf="@+id/txttipogeneropel1"
-                android:text="@string/duration"
-                android:textColor="@color/AzulClaro" />
 
-            <TextView
-                android:id="@+id/txttiempopel1"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textotitulopelicula"
-                android:layout_toRightOf="@id/textoduracion"
-                android:text="000"
-                android:textColor="@color/Negro" />
+                <TextView
+                    android:id="@+id/textotitulopelicula"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/imageView_imagen"
+                    tools:text="@string/tittlemovie"
+                    android:textColor="@color/Rojo"
+                    android:text="@{estrenos.titulopelicula}"
+                    />
 
-            <TextView
-                android:id="@+id/textominutos"
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textotitulopelicula"
-                android:layout_toRightOf="@id/txttiempopel1"
-                android:text="@string/Minutes"
-                android:textColor="@color/Negro" />
+                <TextView
+                    android:id="@+id/textoduracion"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textotitulopelicula"
+                    android:layout_toLeftOf="@+id/txttipogeneropel1"
+                    android:layout_toRightOf="@id/imageView_imagen"
+                    android:layout_toStartOf="@+id/txttipogeneropel1"
+                    tools:text="@string/duration"
+                    android:textColor="@color/AzulClaro"
+                    android:text="@{estrenos.duracion}"
+                    />
 
-            <TextView
-                android:id="@+id/textogenero"
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textoduracion"
-                android:layout_toRightOf="@id/imageView_imagen"
-                android:text="@string/type"
-                android:textColor="@color/AzulClaro" />
+                <TextView
+                    android:id="@+id/txttiempopel1"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textotitulopelicula"
+                    android:layout_toRightOf="@id/textoduracion"
+                    tools:text="000"
+                    android:textColor="@color/Negro"
+                    android:text="@{estrenos.numerominutos}"
+                    />
 
-            <TextView
-                android:id="@+id/textogenero1"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textoduracion"
-                android:layout_toRightOf="@id/textogenero"
-                android:text="@string/genero1"
-                android:textColor="@color/Negro" />
+                <TextView
+                    android:id="@+id/textominutos"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textotitulopelicula"
+                    android:layout_toRightOf="@id/txttiempopel1"
+                    tools:text="@string/Minutes"
+                    android:textColor="@color/Negro"
+                    android:text="@{estrenos.minutos}"
+                    />
 
-            <TextView
-                android:id="@+id/textogenero2"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/textoduracion"
-                android:layout_toRightOf="@id/textogenero1"
-                android:text="@string/genero2"
-                android:textColor="@color/Negro" />
+                <TextView
+                    android:id="@+id/textogenero"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textoduracion"
+                    android:layout_toRightOf="@id/imageView_imagen"
+                    tools:text="@string/type"
+                    android:textColor="@color/AzulClaro"
+                    android:text="@{estrenos.tipogenero}"
+                    />
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/textogenero1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textoduracion"
+                    android:layout_toRightOf="@id/textogenero"
+                    tools:text="@string/genero1"
+                    android:textColor="@color/Negro"
+                    android:text="@{estrenos.genero1}"
+                    />
 
-    </RelativeLayout> <!-- Pelicula 1-->
+                <TextView
+                    android:id="@+id/textogenero2"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/textoduracion"
+                    android:layout_toRightOf="@id/textogenero1"
+                    tools:text="@string/genero2"
+                    android:textColor="@color/Negro"
+                    android:text="@{estrenos.genero2}"
+                    />
 
-</FrameLayout>
+            </RelativeLayout>
+
+        </RelativeLayout> <!-- Pelicula 1-->
+
+    </FrameLayout>
+</layout>
+

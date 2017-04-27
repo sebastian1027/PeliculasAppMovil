@@ -32,4 +32,23 @@
     <string name="Supernatural">SobreNatural</string>
     <string name="comedy">Comedia</string>
     <string name="biography">Biografia</string>
+    <string name="title_activity_estrenos_fragment">Estrenos Fragment</string>
+    <string name="title_activity_proximos_estrenos_fragment">Próximos Estrenos Fragment</string>
+    <string name="title_activity_tabbed_ativity">Tabbed Ativity</string>
+    <string name="tittlemovie">Titulo Pelicula</string>
+    <string name="genero2">Genero 2</string>
+    <string name="genero1">Genero 1</string>
+    <string name="Genero3">Genero 3</string>
+    <string name="minutos">Minutos</string>
+    <string name="peliculas">Películas</string>
+    <string name="calificarpeliculas">Calificar Películas</string>
+    <string name="recordar">Recordar</string>
+    <string name="horarios">Horarios</string>
+    <string name="mejorescalificadas">Mejores Calificadas</string>
+    <string name="precios">Precios</string>
+    <string name="salir">Salir</string>
+    <string name="profile">Perfil</string>
+    <string name="open">Menu Abierto</string>
+    <string name="close">Menu Cerrado</string>
+
 </resources>

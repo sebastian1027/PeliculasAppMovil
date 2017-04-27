@@ -1,162 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="@dimen/small"
-    >
-
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout
-        android:id="@+id/pelicula"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small">
 
-
-        <ImageView
-            android:id="@+id/imageView_imagen"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@android:drawable/ic_menu_gallery"
-            />
 
         <RelativeLayout
-            android:id="@+id/descripcion"
+            android:id="@+id/pelicula"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="190dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@id/imageView_imagen"
-            >
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
 
-            <TextView
-                android:id="@+id/textotitulopelicula"
-                android:layout_width="220dp"
-                android:layout_height="40dp"
-                android:layout_toRightOf="@id/imageView_imagen"
-                android:text="@string/tittlemovie"
-                android:textColor="@color/Rojo"
-                android:textAllCaps="false"
-                android:textSize="30sp"
-                />
-            <LinearLayout
-                android:id="@+id/linear1"
+            <ImageView
+                android:id="@+id/imageView_imagen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <RelativeLayout
+                android:id="@+id/descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textotitulopelicula"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/imageView_imagen">
 
-                >
 
                 <TextView
-                    android:id="@+id/textoduracion"
-                    android:layout_width="114dp"
+                    android:id="@+id/textotitulopelicula"
+                    android:layout_width="220dp"
                     android:layout_height="40dp"
-                    android:layout_below="@id/textotitulopelicula"
-                    android:layout_toLeftOf="@+id/txttipogeneropel1"
                     android:layout_toRightOf="@id/imageView_imagen"
-                    android:layout_toStartOf="@+id/txttipogeneropel1"
-                    android:text="@string/duration"
-                    android:textColor="@color/AzulClaro"
-                    android:textSize="20sp" />
+                    android:text="@string/tittlemovie"
+                    android:textColor="@color/Rojo"
+                    android:textAllCaps="false"
+                    android:textSize="30sp" />
 
-                <TextView
-                    android:id="@+id/txttiempopel1"
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_below="@id/textotitulopelicula"
-                    android:layout_toRightOf="@id/textoduracion"
-                    android:text="000"
-                    android:textColor="@color/Negro"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    />
 
-                <TextView
-                    android:id="@+id/textominutos"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:layout_below="@id/textotitulopelicula"
-                    android:layout_toRightOf="@id/txttiempopel1"
-                    android:text="@string/Minutes"
-                    android:textColor="@color/Negro"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/textoduracion"
+                        android:layout_width="114dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/textotitulopelicula"
+                        android:layout_toLeftOf="@+id/txttipogeneropel1"
+                        android:layout_toRightOf="@id/imageView_imagen"
+                        android:layout_toStartOf="@+id/txttipogeneropel1"
+                        android:text="@string/duration"
+                        android:textColor="@color/AzulClaro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txttiempopel1"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textotitulopelicula"
+                        android:layout_toRightOf="@id/textoduracion"
+                        android:text="000"
+                        android:textColor="@color/Negro"
+                        android:textSize="20sp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/textominutos"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textotitulopelicula"
+                        android:layout_toRightOf="@id/txttiempopel1"
+                        android:text="@string/Minutes"
+                        android:textColor="@color/Negro"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear1">
+
+                    <TextView
+                        android:id="@+id/textogenero"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/textoduracion"
+                        android:layout_toRightOf="@id/imageView_imagen"
+                        android:layout_weight="1"
+                        android:text="@string/type"
+                        android:textColor="@color/AzulClaro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textogenero1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textoduracion"
+                        android:layout_toRightOf="@id/textogenero"
+                        android:text="@string/genero1"
+                        android:textColor="@color/Negro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textogenero2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textoduracion"
+                        android:layout_toRightOf="@id/textogenero1"
+                        android:text="@string/genero2"
+                        android:textColor="@color/Negro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textogenero3"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textogenero"
+                        android:layout_toRightOf="@id/textogenero"
+                        android:text="@string/Genero3"
+                        android:textColor="@color/Negro"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Recordar"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/linear1"
-                >
-
-                <TextView
-                    android:id="@+id/textogenero"
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@id/textoduracion"
-                    android:layout_toRightOf="@id/imageView_imagen"
-                    android:layout_weight="1"
-                    android:text="@string/type"
-                    android:textColor="@color/AzulClaro"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/textogenero1"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:layout_below="@id/textoduracion"
-                    android:layout_toRightOf="@id/textogenero"
-                    android:text="@string/genero1"
-                    android:textColor="@color/Negro"
-                    android:textSize="20sp"
-                    />
-
-                <TextView
-                    android:id="@+id/textogenero2"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:layout_below="@id/textoduracion"
-                    android:layout_toRightOf="@id/textogenero1"
-                    android:text="@string/genero2"
-                    android:textColor="@color/Negro"
-                    android:textSize="20sp"
-                    />
-                <TextView
-                    android:id="@+id/textogenero3"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:layout_below="@id/textogenero"
-                    android:layout_toRightOf="@id/textogenero"
-                    android:text="@string/Genero3"
-                    android:textColor="@color/Negro"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/Recordar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/Amarillo"
-            android:gravity="center"
-            android:text="@string/remember"
-            android:textSize="20sp"
-            android:layout_below="@+id/descripcion"
-            android:layout_centerHorizontal="true" />
+                android:background="@color/Amarillo"
+                android:gravity="center"
+                android:text="@string/remember"
+                android:textSize="20sp"
+                android:layout_below="@+id/descripcion"
+                android:layout_centerHorizontal="true" />
 
 
-    </RelativeLayout> <!-- Pelicula 1-->
+        </RelativeLayout> <!-- Pelicula 1-->
 
 
-
-</RelativeLayout>
+    </RelativeLayout>
+</layout>
