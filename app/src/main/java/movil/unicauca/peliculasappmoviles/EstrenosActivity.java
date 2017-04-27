@@ -93,7 +93,7 @@ public class EstrenosActivity extends AppCompatActivity implements EstrenosFragm
         binding.drawer.closeDrawers();
         switch (item.getItemId()){
             case R.id.nav_peliculas:
-                Toast.makeText(this, "pelicualas", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "peliculas", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.nav_calificarpeliculas:

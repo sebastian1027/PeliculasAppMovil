@@ -1,20 +1,22 @@
 package movil.unicauca.peliculasappmoviles.Listas;
 
+import movil.unicauca.peliculasappmoviles.ProximosEstrenosActivity;
+
 /**
  * Created by Sebastianl on 20/04/2017.
  */
 
-public class ListaEntradaProximosEstrenos {
+public class ListaEntradaProximosEstrenos extends ProximosEstrenosActivity {
 
-    private int numerominutos;
+    private int p_numerominutos;
     private String tituloproximapelicula, p_duracion, p_minutos, p_tipogenero, p_genero1, p_genero2, p_Imagen, p_boton;
 
-    public int getNumerominutos() {
-        return numerominutos;
+    public int getP_numerominutos() {
+        return p_numerominutos;
     }
 
-    public void setNumerominutos(int numerominutos) {
-        this.numerominutos = numerominutos;
+    public void setP_numerominutos(int p_numerominutos) {
+        this.p_numerominutos = p_numerominutos;
     }
 
     public String getTituloproximapelicula() {
