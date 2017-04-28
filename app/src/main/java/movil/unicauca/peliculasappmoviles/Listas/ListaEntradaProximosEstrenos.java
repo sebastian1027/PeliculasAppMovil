@@ -9,7 +9,7 @@ import movil.unicauca.peliculasappmoviles.ProximosEstrenosActivity;
 public class ListaEntradaProximosEstrenos extends ProximosEstrenosActivity {
 
     private int p_numerominutos;
-    private String tituloproximapelicula, p_duracion, p_minutos, p_tipogenero, p_genero1, p_genero2, p_Imagen, p_boton;
+    private String tituloproximapelicula, p_duracion, p_minutos, p_tipogenero, p_genero1, p_genero2, p_image, p_boton;
 
     public int getP_numerominutos() {
         return p_numerominutos;
@@ -68,11 +68,11 @@ public class ListaEntradaProximosEstrenos extends ProximosEstrenosActivity {
     }
 
     public String getP_Imagen() {
-        return p_Imagen;
+        return p_image;
     }
 
-    public void setP_Imagen(String p_Imagen) {
-        this.p_Imagen = p_Imagen;
+    public void setP_image(String p_Imagen) {
+        this.p_image = p_Imagen;
     }
 
     public String getP_boton() {

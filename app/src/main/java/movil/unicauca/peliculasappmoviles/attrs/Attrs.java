@@ -15,5 +15,6 @@ public class Attrs {
     @BindingAdapter("app:imgUrl")
     public static void setImage(ImageView img, String url){
         Picasso.with(img.getContext()).load(Uri.parse(url)).into(img);
+
     }
 }

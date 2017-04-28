@@ -25,7 +25,7 @@
             android:id="@+id/pelicula"
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            android:onClick="@{()-> handler.onClick(v)}"
+            android:onClick="@{(v)-> handler.onClick(v)}"
             >
 
             <ImageView
@@ -33,7 +33,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@android:drawable/ic_menu_gallery"
-                />
+                /> <!-- app:imgUrl="@{proximos_estrenos.P_image}" -->
 
             <RelativeLayout
                 android:id="@+id/descripcion"

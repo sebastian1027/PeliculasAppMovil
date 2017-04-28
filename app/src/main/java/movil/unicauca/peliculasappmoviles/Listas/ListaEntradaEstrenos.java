@@ -7,17 +7,17 @@
 public class ListaEntradaEstrenos {
 
     private int numerominutos;
-    private String titulopelicula, duracion, minutos, tipogenero, genero1, genero2, Imagen;
+    private String titulopelicula, duracion, minutos, tipogenero, genero1, genero2, image;
 
 
     //region getter and setter
 
-    public String getImagen() {
-        return Imagen;
+    public String getImage() {
+        return image;
     }
 
-    public void setImagen(String Imagen) {
-        this.Imagen = Imagen;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getTitulopelicula() {

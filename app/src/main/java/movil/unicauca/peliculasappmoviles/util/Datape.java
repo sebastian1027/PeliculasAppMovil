@@ -26,6 +26,7 @@ public class Datape {
             pe1.setP_genero1("Terror");
             pe1.setP_genero2(" ");
             pe1.setP_boton("Recordar");
+            pe1.setP_image("http://www.embloga2.com/wp-content/uploads/2016/11/544545.jpg");
 
             ListaEntradaProximosEstrenos pe2 = new ListaEntradaProximosEstrenos();
             pe2.setTituloproximapelicula("Logan");
@@ -36,6 +37,7 @@ public class Datape {
             pe2.setP_genero1("Acción");
             pe2.setP_genero2("Ficción");
             pe2.setP_boton("Recordar");
+            pe1.setP_image("http://www.embloga2.com/wp-content/uploads/2016/11/544545.jpg");
 
             ListaEntradaProximosEstrenos pe3 = new ListaEntradaProximosEstrenos();
             pe3.setTituloproximapelicula("Rapidos y Furiosos");
@@ -46,6 +48,7 @@ public class Datape {
             pe3.setP_genero1("Acción");
             pe3.setP_genero2("Ficción");
             pe3.setP_boton("Recordar");
+            pe1.setP_image("http://www.embloga2.com/wp-content/uploads/2016/11/544545.jpg");
 
             ListaEntradaProximosEstrenos pe4 = new ListaEntradaProximosEstrenos();
             pe4.setTituloproximapelicula("Un jefe en pañales");
@@ -56,6 +59,7 @@ public class Datape {
             pe4.setP_genero1("Animación");
             pe4.setP_genero2("Comedia");
             pe4.setP_boton("Recordar");
+            pe1.setP_image("http://www.embloga2.com/wp-content/uploads/2016/11/544545.jpg");
 
             datape.add(pe1);
             datape.add(pe2);
