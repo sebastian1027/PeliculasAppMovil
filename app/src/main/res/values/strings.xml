@@ -54,4 +54,5 @@
     <string name="profile">Profile</string>
     <string name="open">Open Menu</string>
     <string name="close">Close Menu</string>
+    <string name="numberminutes">000</string>
 </resources>

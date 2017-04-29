@@ -100,10 +100,6 @@ public class EstrenosActivity extends AppCompatActivity implements EstrenosFragm
                 Toast.makeText(this, R.string.calificarpeliculas, Toast.LENGTH_SHORT).show();
                 break;
 
-            case  R.id.nav_recordar:
-                Toast.makeText(this, R.string.recordar, Toast.LENGTH_SHORT).show();
-                break;
-
             case R.id.nav_horarios:
                 Toast.makeText(this, R.string.horarios, Toast.LENGTH_SHORT).show();
                 break;

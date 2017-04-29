@@ -11,6 +11,16 @@ public class ListaEntradaProximosEstrenos extends ProximosEstrenosActivity {
     private int p_numerominutos;
     private String tituloproximapelicula, p_duracion, p_minutos, p_tipogenero, p_genero1, p_genero2, p_image, p_boton;
 
+
+
+    public String getP_image() {
+        return p_image;
+    }
+
+    public void setP_image(String p_image) {
+        this.p_image = p_image;
+    }
+
     public int getP_numerominutos() {
         return p_numerominutos;
     }
@@ -67,13 +77,7 @@ public class ListaEntradaProximosEstrenos extends ProximosEstrenosActivity {
         this.p_genero2 = p_genero2;
     }
 
-    public String getP_Imagen() {
-        return p_image;
-    }
 
-    public void setP_image(String p_Imagen) {
-        this.p_image = p_Imagen;
-    }
 
     public String getP_boton() {
         return p_boton;

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="movil.unicauca.peliculasappmoviles.Tabbed.EstrenosFragment$PlaceholderFragment">
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -21,7 +32,9 @@
                 android:id="@+id/imageView_imagen"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@android:drawable/ic_menu_gallery" />
+                android:src="@android:drawable/ic_menu_gallery"
+                app:imgUrl="@{proximos_estrenos.p_image}"
+                />
 
             <RelativeLayout
                 android:id="@+id/descripcion"
@@ -38,10 +51,12 @@
                     android:layout_width="220dp"
                     android:layout_height="40dp"
                     android:layout_toRightOf="@id/imageView_imagen"
-                    android:text="@string/tittlemovie"
+                    tools:text="@string/tittlemovie"
                     android:textColor="@color/Rojo"
                     android:textAllCaps="false"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:text="@{proximos_estrenos.tituloproximapelicula}"
+                    />
 
                 <LinearLayout
                     android:id="@+id/linear1"
@@ -59,9 +74,11 @@
                         android:layout_toLeftOf="@+id/txttipogeneropel1"
                         android:layout_toRightOf="@id/imageView_imagen"
                         android:layout_toStartOf="@+id/txttipogeneropel1"
-                        android:text="@string/duration"
+                        tools:text="@string/duration"
                         android:textColor="@color/AzulClaro"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:text="@{proximos_estrenos.p_duracion}"
+                        />
 
                     <TextView
                         android:id="@+id/txttiempopel1"
@@ -70,10 +87,12 @@
                         android:layout_weight="1"
                         android:layout_below="@id/textotitulopelicula"
                         android:layout_toRightOf="@id/textoduracion"
-                        android:text="000"
+                        tools:text="@string/numberminutes"
                         android:textColor="@color/Negro"
                         android:textSize="20sp"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        android:text="@{proximos_estrenos.p_numerominutos}"
+                        />
 
                     <TextView
                         android:id="@+id/textominutos"
@@ -82,9 +101,11 @@
                         android:layout_weight="1"
                         android:layout_below="@id/textotitulopelicula"
                         android:layout_toRightOf="@id/txttiempopel1"
-                        android:text="@string/Minutes"
+                        tools:text="@string/Minutes"
                         android:textColor="@color/Negro"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:text="@{proximos_estrenos.p_minutos}"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,9 +120,11 @@
                         android:layout_below="@id/textoduracion"
                         android:layout_toRightOf="@id/imageView_imagen"
                         android:layout_weight="1"
-                        android:text="@string/type"
+                        tools:text="@string/type"
                         android:textColor="@color/AzulClaro"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:text="@{proximos_estrenos.p_tipogenero}"
+                        />
 
                     <TextView
                         android:id="@+id/textogenero1"
@@ -110,9 +133,11 @@
                         android:layout_weight="1"
                         android:layout_below="@id/textoduracion"
                         android:layout_toRightOf="@id/textogenero"
-                        android:text="@string/genero1"
+                        tools:text="@string/genero1"
                         android:textColor="@color/Negro"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:text="@{proximos_estrenos.p_genero1}"
+                        />
 
                     <TextView
                         android:id="@+id/textogenero2"
@@ -121,20 +146,12 @@
                         android:layout_weight="1"
                         android:layout_below="@id/textoduracion"
                         android:layout_toRightOf="@id/textogenero1"
-                        android:text="@string/genero2"
+                        tools:text="@string/genero2"
                         android:textColor="@color/Negro"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:text="@{proximos_estrenos.p_genero2}"
+                        />
 
-                    <TextView
-                        android:id="@+id/textogenero3"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="1"
-                        android:layout_below="@id/textogenero"
-                        android:layout_toRightOf="@id/textogenero"
-                        android:text="@string/Genero3"
-                        android:textColor="@color/Negro"
-                        android:textSize="20sp" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -145,14 +162,17 @@
                 android:layout_height="wrap_content"
                 android:background="@color/Amarillo"
                 android:gravity="center"
-                android:text="@string/remember"
+                tools:text="@string/remember"
                 android:textSize="20sp"
                 android:layout_below="@+id/descripcion"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:text="@{proximos_estrenos.p_boton}"
+                />
 
 
         </RelativeLayout> <!-- Pelicula 1-->
 
 
     </RelativeLayout>
+    </FrameLayout>
 </layout>

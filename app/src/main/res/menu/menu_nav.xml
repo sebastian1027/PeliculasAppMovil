@@ -4,7 +4,6 @@
 
     <item android:id="@+id/nav_peliculas" android:title="@string/peliculas" android:icon="@drawable/ic_peliculas"/>
     <item android:id="@+id/nav_calificarpeliculas" android:title="@string/calificarpeliculas" android:icon="@drawable/ic_calificar_peliculas"/>
-    <item android:id="@+id/nav_recordar" android:title="@string/recordar" android:icon="@drawable/ic_recordar"/>
     <item android:id="@+id/nav_horarios" android:title="@string/horarios" android:icon="@drawable/ic_horarios"/>
     <item android:id="@+id/nav_mejorescalificadas" android:title="@string/mejorescalificadas" android:icon="@drawable/ic_mejores_calificadas"/>
     <item android:id="@+id/nav_precios" android:title="@string/precios" android:icon="@drawable/ic_precios"/>

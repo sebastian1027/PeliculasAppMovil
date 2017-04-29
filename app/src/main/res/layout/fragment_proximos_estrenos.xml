@@ -11,6 +11,9 @@
             name="proximos_estrenos"
             type="movil.unicauca.peliculasappmoviles.Listas.ListaEntradaProximosEstrenos"/>
     </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -20,6 +23,8 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="movil.unicauca.peliculasappmoviles.Tabbed.EstrenosFragment$PlaceholderFragment">
+
+
 
         <RelativeLayout
             android:id="@+id/pelicula"
@@ -33,7 +38,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@android:drawable/ic_menu_gallery"
-                /> <!-- app:imgUrl="@{proximos_estrenos.P_image}" -->
+                app:imgUrl="@{proximos_estrenos.p_image}"
+                />
 
             <RelativeLayout
                 android:id="@+id/descripcion"
@@ -51,8 +57,10 @@
                     android:layout_width="120dp"
                     android:layout_height="40dp"
                     android:layout_toRightOf="@id/imageView_imagen"
-                    android:text="@string/tittlemovie"
-                    android:textColor="@color/Rojo" />
+                    tools:text="@string/tittlemovie"
+                    android:textColor="@color/Rojo"
+                    android:text="@{proximos_estrenos.tituloproximapelicula}"
+                    />
 
                 <TextView
                     android:id="@+id/textoduracion"
@@ -73,6 +81,7 @@
                     android:layout_height="40dp"
                     android:layout_below="@id/textotitulopelicula"
                     tools:layout_toRightOf="@id/textoduracion"
+                    tools:text="@string/numberminutes"
                     android:text="@{proximos_estrenos.p_numerominutos}"
                     android:textColor="@color/Negro" />
 
@@ -134,8 +143,9 @@
                 android:text="@{proximos_estrenos.p_boton}"
                 />
 
-        </RelativeLayout> <!-- Pelicula 1-->
+        </RelativeLayout>
 
     </FrameLayout>
+    </ScrollView>
 </layout>
 

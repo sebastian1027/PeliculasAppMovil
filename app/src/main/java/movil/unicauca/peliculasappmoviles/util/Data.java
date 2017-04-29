@@ -38,7 +38,7 @@ public class Data {
             l2.setImage("http://www.embloga2.com/wp-content/uploads/2016/11/544545.jpg");
 
             ListaEntradaEstrenos l3 = new ListaEntradaEstrenos();
-            l3.setTitulopelicula("Rapidos y Furiosos");
+            l3.setTitulopelicula("Rapidos y Furiosos 8");
             l3.setDuracion("Duración");
             l3.setNumerominutos(140);
             l3.setMinutos("Minutos");
